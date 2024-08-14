@@ -1,7 +1,7 @@
 CREATE TABLE details (
  id INT NOT NULL AUTO_INCREMENT,
  name VARCHAR(128) NOT NULL,
- sort_order INT NOT NULL DEFAULT 0,
+ sort_order DECIMAL NOT NULL DEFAULT 0.0,
  image VARCHAR(512),
  color VARCHAR(128),
  fabric VARCHAR(128),
@@ -9,6 +9,7 @@ CREATE TABLE details (
  is_eco BOOLEAN DEFAULT FALSE,
  eco_order INT DEFAULT 0,
  attributes VARCHAR(1024),
- cleancode CHAR(1),
+ cleancode VARCHAR(2),
+ is_available BOOLEAN DEFAULT TRUE
  PRIMARY KEY (id)
 );
