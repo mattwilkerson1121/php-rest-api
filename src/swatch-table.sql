@@ -10,6 +10,6 @@ CREATE TABLE details (
  eco_order INT DEFAULT 0,
  attributes VARCHAR(1024),
  cleancode VARCHAR(2),
- is_available BOOLEAN DEFAULT TRUE
+ is_available BOOLEAN DEFAULT 1
  PRIMARY KEY (id)
 );
